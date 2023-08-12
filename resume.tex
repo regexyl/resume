@@ -1,0 +1,308 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\huge \scshape Regina Liu} \\ \vspace{3pt}
+    \small
+    \faEnvelope \hspace{.5pt} \href{mailto:reginaliuyx@gmail.com}{reginaliuyx@gmail.com}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/regexyl}{github.com/regexyl}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://regexyl.com/}{regexyl.com}
+\end{center}
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Bebop (Wintermute)}{Singapore, Singapore}
+      {Front End Engineer}{May 2023 \textbf{--} current}
+      \resumeItemListStart
+            \resumeItem{Optimized performance of UI by implementing virtualization, batching API calls, reduced bundle size.}
+            \resumeItem{Worked on a portion of the internal component library with React and built custom TypeScript types for reusability and composability as part of moving towards a more maintainable codebase.}
+            \resumeItem{Implemented E2E testing with Synpress (based on Cypress) with support for Metamask in CI/CD checks.}
+        \resumeItemListEnd
+
+    % \vspace{15pt}
+    \resumeSubheading
+      {Meta (Facebook)}{London, UK}
+      {Front End Engineer Intern}{May 2022 \textbf{--} Jul 2022}
+        \resumeItemListStart
+        \resumeItem{Implemented video call features, i.e. volume, mute, raise hand, Zoom DTMF in an internal meeting discovery tool with backend interactions via GraphQL and internal middleware for codec-based communication.}
+        \resumeItem{Improved codebase quality by implementing ESlint rules, i.e. alphabetizing CSS styles, ensuring a specific order of CSS-in-JS, prevent zero-index access in arrays.}
+        \resumeItem{Worked extensively with React, Relay, internal styling tools and Hack, an advanced adaptation of PHP.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Grab}{Singapore, Singapore}
+      {Infrastructure Engineer Intern}{Sep 2021 \textbf{--} Dec 2021}
+        \resumeItemListStart
+        \resumeItem{Worked with Python, bash scripting, OAuth and AWS technologies to build an LDAP system for onboarding new developers by granting software access with automatic evaluation of team, role and level.}
+        \resumeItem{Worked on case-by-case incident diagnosis and recovery management with regards to cloud infrastructure (i.e. AWS, Azure and in-house CI/CD deployment tool) and developer tooling.}
+        \resumeItemListEnd
+           
+
+    \resumeSubheading
+      {Mask Network (Sujitech, LLC)}{Singapore, Singapore}
+      {Software Engineer Intern}{May 2021 \textbf{--} Aug 2021}
+        \resumeItemListStart
+            \resumeItem{Wrote smart contracts for the Ethereum mainnet using Solidity for a social token initiative.}
+            \resumeItem{Refactored code to optimize function call durations and reduced gas consumption by 2200+ gas units.}
+            \resumeItem{Added a suite of unit test cases using TypeScript, Mocha and Chai via Ethereum’s Waffle testing framework.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item{
+    \textbf{Programming:} {Python, TypeScript, JavaScript, Rust, PHP} \\ \vspace{3pt}
+    \textbf{Technologies:} {React, Node.js, Flask, MySQL, AWS, Git, Kubernetes, Docker} \\ \vspace{3pt}
+}}
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+    {Singapore Management University}{Singapore, Singapore}
+    {B.Sc. in Information Systems}{Aug 2019 \textbf{--} Jun 2023}
+    % Error: this is not generated as I've removed it from resumeEducationHeading
+    % Deleting this line would cause a build error though
+    {Minor Degree in Computer Engineering;   \textbf{GPA: 3.89/4.00}}{Oct 2020 \textbf{--} Jun 2023 (Expected)}
+    
+\resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{VMware Tanzu Award (May 2021):} {Led team of six to rank 1st out of 80+ groups in cohort for best cloud native project using Docker, RabbitMQ and Kong for an API Gateway to build a mock integrated university applications portal.} \\ \vspace{3pt}
+        \textbf{Ellipsis Coding Challenge (Mar 2021):} {Ranked 3rd out of 162 students in a data structures and algorithms contest.} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Final Year Research (2023) | Identification of errors in C with the help of Rust translations}}{}
+          \resumeItemListStart
+            \resumeItem{A research investigating the state of current C to Rust translation tools, and categorize the errors that emerge from running the Rust linter and compiler on the Rust output.}
+            \resumeItem{Obtained samples for training a machine learning model via building a C-to-Rust mapping automation tool, and formulated a high-level categorization of translation and non-translation errors for the ML purposes.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Credit Suisse, Inspire Women In Technology (2021) | The Objective App}}{}
+          \resumeItemListStart
+            \resumeItem{Among 8 students selected for mentorship by Credit Suisse Singapore to develop a goal-tracking app.}
+            \resumeItem{Developed an iOS-mobile app using React Native, TypeScript and Expo SDK.}
+          \resumeItemListEnd
+      
+    %   \resumeProjectHeading
+    %     {\textbf{Chess Bot} $|$ \emph{\href{https://github.com/arasgungore/chess-bot}{\color{blue}GitHub}}}{}
+    %       \resumeItemListStart
+    %         \resumeItem{A C++ project in which you can play chess against an AI with a specified decision tree depth that uses alpha-beta pruning algorithm to predict the optimal move.}
+    %         \resumeItem{Aside from basic moves, this mini chess engine also implements chess rules such as castling, en passant, fifty-move rule, threefold repetition, and pawn promotion.}
+    %       \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Major coursework:}{ Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering} \\ \vspace{3pt}
+        
+%         \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms}
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \resumeSubHeadingListStart
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
