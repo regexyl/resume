@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1691850873 "/Users/reginaliu/code/resume/resume.tex" "resume.pdf" "resume" 1691850873
-  "/Users/reginaliu/code/resume/resume.tex" 1691850873 11012 14c1ddf6497a14af808395f461feb27c ""
+["pdflatex"] 1692173774 "/Users/reginaliu/code/resume/resume.tex" "resume.pdf" "resume" 1692173775
+  "/Users/reginaliu/code/resume/resume.tex" 1692173774 11156 1d503f94e47349d55f8a701045dada1f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -95,9 +95,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663139863 2826440 e741af725737ed719d3c5bb318eedc9f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "resume.aux" 1691850873 1311 bb61de84fda7434f267520d36f6acd74 "pdflatex"
-  "resume.out" 1691850873 522 60c967ebd1336aae5eb33b16dd846e02 "pdflatex"
-  "resume.tex" 1691850873 11012 14c1ddf6497a14af808395f461feb27c ""
+  "resume.aux" 1692173775 1311 bb61de84fda7434f267520d36f6acd74 "pdflatex"
+  "resume.out" 1692173775 522 60c967ebd1336aae5eb33b16dd846e02 "pdflatex"
+  "resume.tex" 1692173774 11156 1d503f94e47349d55f8a701045dada1f ""
   (generated)
   "resume.aux"
   "resume.log"
